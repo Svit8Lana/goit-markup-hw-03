@@ -91,6 +91,7 @@ button {
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
+    box-sizing: border-box;
 }
 .pointer:hover,
 .pointer:focus { 
@@ -212,3 +213,5 @@ text-decoration: none;
     letter-spacing: 0.03em;
     color: var(--paragraph-color);
 }
+
+border 
