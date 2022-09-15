@@ -32,11 +32,29 @@ color: var(--paragraph-color);
 /* header */
 .header-container {
 display: flex;
+align-items: center;
 }
 
-/* .webstudio-top { margin-right: 93px;} */
-/* не працює чомусь ???  відео 1:44:20*/
+.header-nav {
+    display: flex;
+    margin-right: auto;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+}
 
+.webstudio-top { 
+    display: flex;
+    margin-right: 93px;
+    /* margin-left: 215px; */
+/* padding-top: 32px;
+padding-bottom: 32px; */
+align-items: center;
+} 
+
+.site-nav  {
+    display: flex;
+    gap: 50px; 
+}
 
 .webstudio-top {
 color: var(--accent-color-studio);
@@ -44,8 +62,11 @@ font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;
-    
+    text-decoration: none; 
+}
+
+.telephone {
+    margin-right: 215px;
 }
 
 .web {
@@ -65,6 +86,7 @@ ul {    list-style: none;}
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
+        
 }
 
 .site-nav, .link:hover,
@@ -76,24 +98,30 @@ ul {    list-style: none;}
 .telephone {
     color: var(--paragraph-color);
 }
+    
 .site-nav, .current { 
     color: var(--accent-color-web); }
 
-/* hero   */
+ .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;
+    /* display: flex; */
+    /* flex-direction: row; */
+    
+    outline: 2px solid red;
+    outline-offset: -2px;
+        }
 
-.container {
-width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
-margin-left: auto;
-margin-right: auto;
- /* display: flex; */
-
- /* flex-direction: row; */
-
-outline: 2px solid red;
+.section {
+    /* padding-top: 94px; */
+    /* padding-bottom: 94px; */
 }
 
+/* Секція 1  */
+/* hero   */
 
 .hero { background-color: var(--accent-color-hero); }
 
@@ -105,7 +133,17 @@ font-weight: 900;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+   
 }
+
+.container-hero-title {
+    /* align-items: center; */
+    /* justify-content: center; */
+width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;}
+
 /* button */
 button {
     font-family: Roboto, sans-serif;
@@ -124,8 +162,26 @@ button {
     background-color: var(--accent-color-button);
 }
 
-/* section */
+/* section 2*/
 .sect { font-size: 0px; }
+
+.container-section {
+    display: flex;
+    padding-top: 10px;
+    padding-right: 10px;
+    gap: 30px;
+}
+
+
+/* section 3*/
+.container-section-img {
+    display: flex;
+    /* align-items: center; */
+    padding-top: 55px;
+    padding-bottom: 94px;
+    gap: 30px;
+}
+
 
 /* features */
 .title {
@@ -168,6 +224,19 @@ button {
 
 .section, .koman { background-color: var(--accent-color-title); }
 
+.section, .koman,  .tit, .tex
+{text-align: center;
+
+}
+
+
+
+.container-section-koman {
+    display: flex;
+    gap: 30px;
+}
+
+/* Підвал сторінки */
 .futer { background-color: var(--accent-color-hero); }
 
 .webs-top { color: var(--accent-color-title); }
@@ -239,4 +308,3 @@ text-decoration: none;
     color: var(--paragraph-color);
 }
 
-border 
