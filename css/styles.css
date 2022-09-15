@@ -9,6 +9,11 @@ webstudio зверху  color: #2196F3;color: #000000;
 кнопка в Студії box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
 фон сірий кнопка портфоліо background: #F5F4FA; */
 
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;} */
+
 :root {
     --primary-text-color: #212121;
     --title-text-color: #212121;
@@ -65,9 +70,12 @@ font-family: 'Raleway';
     text-decoration: none; 
 }
 
-.telephone {
+/* .contacts {
+    margin-right: 344px;
+} */
+/* .telephone {
     margin-right: 215px;
-}
+} */
 
 .web {
 color: var(--accent-color-web);
@@ -123,7 +131,17 @@ ul {    list-style: none;}
 /* Секція 1  */
 /* hero   */
 
-.hero { background-color: var(--accent-color-hero); }
+.hero { 
+background-color: var(--accent-color-hero); 
+/* padding-top: 200px;
+padding-bottom: 280px; */
+
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    /* border: 5px solid tomato; */
+}
 
 .hero-title {
         color: var(--accent-color-title);
@@ -133,16 +151,18 @@ font-weight: 900;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-   
+
+    position: absolute;
+    width: 696px;
+        height: 120px;
+        left: 452px;
+        top: 280px;  
 }
 
 .container-hero-title {
     /* align-items: center; */
     /* justify-content: center; */
-width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;}
+}
 
 /* button */
 button {
@@ -155,6 +175,18 @@ button {
     letter-spacing: 0.06em;
     cursor: pointer;
     box-sizing: border-box;
+
+    position: absolute;
+        width: 216px;
+        height: 50px;
+        left: 692px;
+        top: 430px;
+
+        border-radius: 4px;
+
+        /* display: flex;
+            align-items: center;
+            text-align: center; */
 }
 .pointer:hover,
 .pointer:focus { 
