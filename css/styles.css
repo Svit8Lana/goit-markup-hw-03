@@ -254,18 +254,32 @@ button {
         line-height: 1.19;
     letter-spacing: 0.03em; }
 
-.section, .koman { background-color: var(--accent-color-title); }
+.section, .koman {
+ background-color: var(--accent-color-title); }
 
 .section, .koman,  .tit, .tex
 {text-align: center;
-
 }
-
-
 
 .container-section-koman {
     display: flex;
     gap: 30px;
+    /* border-radius: 0px 0px 4px 4px; */
+}
+
+.container-background {
+background-color: var(--accent-color-but);
+}
+
+.fon {
+    background-color: var(--accent-color-title);
+
+    width: 270px;
+    height: 368px;
+    top: 1632px;
+    
+    /* padding-top: 186px;
+    padding-bottom: 94px; */
 }
 
 /* Підвал сторінки */
@@ -287,7 +301,6 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
  }
-
 
 .address {
    color: var(--accent-color-title);
