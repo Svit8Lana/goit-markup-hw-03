@@ -60,6 +60,9 @@ align-items: center;
 .site-nav  {
     display: flex;
     gap: 50px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
 
 .webstudio-top {
@@ -109,29 +112,16 @@ ul {    list-style: none;}
     padding-right: 15px;
      margin-left: auto;
      margin-right: auto;
-    
-    outline: 2px solid red;
-    outline-offset: -2px;
-        }
-
- /* .frame {
-padding-top: 94px;
-padding-bottom: 94px;
-        } */
+    }
 
 /* Секція 1  */
 /* hero   */
 
 .hero { 
 background-color: var(--accent-color-hero); 
-/* padding-top: 200px;
-padding-bottom: 280px; */
-
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-    /* border: 5px solid tomato; */
+padding-top: 200px;
+padding-bottom: 200px; 
+   text-align: center;
 }
 
 .hero-title {
@@ -142,12 +132,9 @@ font-weight: 900;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    position: absolute;
     width: 696px;
-        height: 120px;
-        left: 452px;
-        top: 280px;  
+    margin: 0 auto 30px;
+         
 }
 
 .container-hero-title {
@@ -170,12 +157,8 @@ button {
     }
 
  .click {
-position: absolute;
-        width: 216px;
-        height: 50px;
-        left: 692px;
-        top: 430px;
         border-radius: 4px;
+        padding: 10px 32px;
  }
 
         /* не вставляла ????? */
@@ -195,22 +178,21 @@ position: absolute;
 
 .container-section {
     display: flex;
-    padding-top: 10px;
-    padding-right: 10px;
     gap: 30px;
+    margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
 }
 
 
 /* section 3*/
+.section, .frame {
+    margin-top: 0px;
+}
+
 .container-section-img {
     display: flex;
-    padding-top: 47px;
-    padding-bottom: 47px;
     gap: 30px;
-    margin-top: auto;
-        margin-bottom: auto;
-
-        padding-left: 0px;
         justify-content: center;
 }
 
@@ -221,6 +203,9 @@ position: absolute;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 0px;
+        margin-bottom: 0px;
+        margin-bottom: 10px;
 }
 
 .text {
@@ -228,6 +213,8 @@ position: absolute;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
+        margin-top: 0px;
+            margin-bottom: 0px;
       }
 
 /* Секція 4 */
@@ -239,7 +226,6 @@ position: absolute;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 
@@ -253,32 +239,35 @@ position: absolute;
         
  }
 
-/* 757575 */
  .tex { 
     font-weight: 400;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
     letter-spacing: 0.03em;
-    
 }
 
 .section, .koman {
- background-color: var(--accent-color-title); }
+ background-color: var(--accent-color-but);
 
+}
+
+ .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
 .container-section-koman {
     display: flex;
     gap: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 0px;
         justify-content: center;
-        padding-bottom: 154px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
 }
 
-.container-background {
+/* .container-background {
 background-color: var(--accent-color-but);
-}
+} */
 
 .fon {
     background-color: var(--accent-color-title);
@@ -290,12 +279,14 @@ background-color: var(--accent-color-but);
 
 
 /* Підвал сторінки */
-.futer { background-color: var(--accent-color-hero); }
+.futer { background-color: var(--accent-color-hero);
+padding-top: 60px;
+padding-bottom: 60px;
+}
 
 .webs-top { color: var(--accent-color-title);
-display: flex;
-    padding-top: 60px;
-    padding-bottom: 20px;
+display: block;
+    margin-bottom: 20px;
 }
 
 .weba {  color: var(--accent-color-web);    }
@@ -317,6 +308,10 @@ display: flex;
 margin-left: -40px;
  }
 
+ .indents:not-last-child {
+    margin: 10px;
+ }
+ 
 .address {
    color: var(--accent-color-title);
 font-style: normal;
@@ -367,20 +362,11 @@ line-height: 1.71;
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-top: 94px;
-    padding-bottom: 50px;   
+    margin-bottom: 50px;  
 }
 
 .item, .link-nav {
     background-color: var(--accent-color-title);
-/* box-sizing: border-box;
-
-    position: absolute;
-    width: 370px;
-    height: 404px; */
-    /* left: 615px;
-    top: 262px; */
-    /* border: 1px solid #EEEEEE; */
 }
 .link-nav {
 text-decoration: none;
@@ -392,9 +378,7 @@ text-decoration: none;
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--title-text-color);
-        padding-left: 24px;
-        margin-top: 20px;
-        margin-bottom: auto;
+        margin-bottom: 4px;
 }
 
 .tex-p {
@@ -403,14 +387,23 @@ text-decoration: none;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--paragraph-color);
-    padding-left: 24px;
-        margin-top: auto;
-        margin-bottom: 20px;
 }
 
 .container-images { display: flex; 
 flex-wrap: wrap;
+margin-top: 0px;
 margin-left: 0px;
 padding-left: 0px;
 gap: 30px;
-padding-bottom: 94px;}
+padding-bottom: 94px;
+}
+
+.card {
+    padding-top: 20px;
+        padding-left: 24px;
+        padding-bottom: 54px;
+        border-left: ;
+        border-bottom: ;
+        border-right: ;
+       
+}
