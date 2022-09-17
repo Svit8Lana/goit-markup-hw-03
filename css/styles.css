@@ -35,6 +35,11 @@ font-family: Roboto, sans-serif;
 color: var(--paragraph-color);
 }
 
+ul, p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
 /* header */
 .header-container {
 display: flex;
@@ -51,18 +56,12 @@ align-items: center;
 .webstudio-top { 
     display: flex;
     margin-right: 93px;
-    /* margin-left: 215px; */
-/* padding-top: 32px;
-padding-bottom: 32px; */
 align-items: center;
 } 
 
 .site-nav  {
     display: flex;
     gap: 50px; 
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
 }
 
 .webstudio-top {
@@ -161,11 +160,6 @@ button {
         padding: 10px 32px;
  }
 
-        /* не вставляла ????? */
-        /* display: flex;
-            align-items: center;
-            text-align: center; */
-
 
 .pointer:hover,
 .pointer:focus { 
@@ -179,9 +173,6 @@ button {
 .container-section {
     display: flex;
     gap: 30px;
-    margin-top: 0px;
-        margin-bottom: 0px;
-        padding-left: 0px;
 }
 
 
@@ -203,8 +194,6 @@ button {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-top: 0px;
-        margin-bottom: 0px;
         margin-bottom: 10px;
 }
 
@@ -213,8 +202,6 @@ button {
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
-        margin-top: 0px;
-            margin-bottom: 0px;
       }
 
 /* Секція 4 */
@@ -229,6 +216,14 @@ button {
     padding-bottom: 50px;
 }
 
+.card-index {
+padding-top: 30px;
+    padding-bottom: 59px;
+    /* border-left: ;
+    border-bottom: ;
+    border-right: ; */
+}
+
 .tit { 
     color: var(--title-text-color);
     font-weight: 500;
@@ -236,7 +231,7 @@ button {
         line-height: 1.19;
         text-align: center;
     letter-spacing: 0.03em; 
-        
+    margin-bottom: 10px;
  }
 
  .tex { 
@@ -247,9 +242,8 @@ button {
     letter-spacing: 0.03em;
 }
 
-.section, .koman {
+.koman {
  background-color: var(--accent-color-but);
-
 }
 
  .section {
@@ -260,9 +254,6 @@ button {
     display: flex;
     gap: 30px;
         justify-content: center;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-left: 0px;
 }
 
 /* .container-background {
@@ -271,9 +262,9 @@ background-color: var(--accent-color-but);
 
 .fon {
     background-color: var(--accent-color-title);
-    width: 270px;
-    height: 368px;
-    top: 1632px;
+    /* width: 270px;
+    height: 368px; 
+    top: 1632px; */
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -305,10 +296,9 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 display: flex;
-margin-left: -40px;
  }
 
- .indents:not-last-child {
+ .indents:not(:last-child) {
     margin: 10px;
  }
  
@@ -391,9 +381,6 @@ text-decoration: none;
 
 .container-images { display: flex; 
 flex-wrap: wrap;
-margin-top: 0px;
-margin-left: 0px;
-padding-left: 0px;
 gap: 30px;
 padding-bottom: 94px;
 }
@@ -405,5 +392,4 @@ padding-bottom: 94px;
         border-left: ;
         border-bottom: ;
         border-right: ;
-       
 }
