@@ -178,7 +178,7 @@ button {
 
 /* section 3*/
 .section, .frame {
-    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .container-section-img {
@@ -213,15 +213,15 @@ button {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .card-index {
 padding-top: 30px;
-    padding-bottom: 59px;
-    /* border-left: ;
-    border-bottom: ;
-    border-right: ; */
+    padding-bottom: 30px;
+    border-left-width: 4px;
+        border-bottom-width: 4px;
+        border-right-width: 0px;
 }
 
 .tit { 
@@ -299,7 +299,7 @@ display: flex;
  }
 
  .indents:not(:last-child) {
-    margin: 10px;
+    margin-bottom: 10px;
  }
  
 .address {
@@ -388,8 +388,24 @@ padding-bottom: 94px;
 .card {
     padding-top: 20px;
         padding-left: 24px;
-        padding-bottom: 54px;
-        border-left: ;
-        border-bottom: ;
-        border-right: ;
+        padding-bottom: 20px;
+        border-left-width: 1px;
+        border-bottom-width: 1px;
+        border-right-width: 1px;
 }
+
+/* 
+ Встановить стилі правої рамки
+ border-right-width: 5px;
+ border-right-style: dotted;
+ border-right-color: black;
+
+ Встановить стилі нижньої рамки
+ border-bottom-width: 7px;
+ border-bottom-style: dashed;
+ border-bottom-color: palevioletred;
+
+ Встановить стилі лівої рамки
+ border-left-width: 9px;
+ border-left-style: dashed;
+ border-left-color: green; */
