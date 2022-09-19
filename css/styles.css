@@ -177,9 +177,7 @@ button {
 
 
 /* section 3*/
-.section, .frame {
-    padding-top: 0px;
-}
+
 
 .container-section-img {
     display: flex;
@@ -250,6 +248,11 @@ padding-top: 30px;
     padding-top: 94px;
     padding-bottom: 94px;
  }
+
+  .frame {
+      padding-top: 0px;
+  }
+
 .container-section-koman {
     display: flex;
     gap: 30px;
@@ -358,6 +361,13 @@ line-height: 1.71;
 .item, .link-nav {
     background-color: var(--accent-color-title);
 }
+
+element.style {
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+
 .link-nav {
 text-decoration: none;
 }
@@ -389,9 +399,9 @@ padding-bottom: 94px;
     padding-top: 20px;
         padding-left: 24px;
         padding-bottom: 20px;
-        border-left-width: 1px;
-        border-bottom-width: 1px;
-        border-right-width: 1px;
+        border-left: 1px solid #EEEEEE;;
+        border-bottom: 1px solid #EEEEEE;;
+        border-right: 1px solid #EEEEEE;;
 }
 
 /* 
