@@ -24,6 +24,7 @@ webstudio зверху  color: #2196F3;color: #000000;
     --accent-color-rgba: rgba(255, 255, 255, 0.6);
     --accent-color-emailink: rgba(255, 255, 255, 1);
     --accent-color-hero: #2F303A;
+    /* колір 40% hero #C4C4C4; */
     --accent-color-button: #188CE8;
     --accent-color-but: #F5F4FA;
     --accent-color-section-fon: #F5F5F5;
@@ -121,7 +122,19 @@ background-color: var(--accent-color-hero);
 padding-top: 200px;
 padding-bottom: 200px; 
    text-align: center;
+
+max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 4px solid red;
+background-image: url(../images/hero/Img\ Overlay.png),
+ url(../images/hero/Img\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 .hero-title {
         color: var(--accent-color-title);
@@ -419,3 +432,19 @@ padding-bottom: 94px;
  border-left-width: 9px;
  border-left-style: dashed;
  border-left-color: green; */
+
+
+
+
+.img {
+background-size: contain
+}
+
+
+
+
+
+
+
+
+
